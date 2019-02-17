@@ -56,7 +56,8 @@ def restaurant_list(request):
             Q(description__icontains = query)
             ).distinct()
     context = {
-        "restaurants":restaurant
+        "restaurants":restaurant,
+        "q":query
     }
     return render(request, 'list.html', context)
 

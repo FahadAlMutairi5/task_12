@@ -6,7 +6,7 @@
 <br>
 <!-- The form -->
 <form class="example" action="{% url 'restaurant-list' %}">
-  <input type="text" placeholder="Search.." name="q">
+  <input type="text" placeholder="Search.." value="{{q}}" name="q">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
 <hr>
