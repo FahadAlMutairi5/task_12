@@ -4,6 +4,12 @@
 
 {% block content %}
 <br>
+<!-- The form -->
+<form class="example" action="{% url 'restaurant-list' %}">
+  <input type="text" placeholder="Search.." name="q">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<hr>
 <div class="row">
     {% for restaurant in restaurants %}
     <div class="col-md-4">
